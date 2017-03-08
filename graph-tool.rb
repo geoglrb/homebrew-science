@@ -18,6 +18,11 @@ class GraphTool < Formula
     depends_on "libtool" => :build
   end
 
+  patch do
+    url "https://git.skewed.de/count0/graph-tool/commit/aaae585f18d324d50c3e1875b9b251c5c543d19e.diff"
+    sha256 "1c1a8b8bcb3f67856d45f2707ac3924e68ecddffee909a88c8a74a547ffe43df"
+  end
+
   option "without-cairo", "Build without cairo support for plotting"
   option "without-gtk+3", "Build without gtk+3 support for interactive plotting"
   option "without-matplotlib", "Use a matplotlib you've installed yourself instead of a Homebrew-packaged matplotlib"
