@@ -19,7 +19,7 @@ class GraphTool < Formula
   end
 
   patch do
-    url "https://git.skewed.de/count0/graph-tool/commit/aaae585f18d324d50c3e1875b9b251c5c543d19e.diff"
+    url "https://raw.githubusercontent.com/Homebrew/formula-patches/3b7bcf4f4a71d8f0b3062c08c378cc20089d6b4b/graph-tool/chrono-disambiguation.diff"
     sha256 "1c1a8b8bcb3f67856d45f2707ac3924e68ecddffee909a88c8a74a547ffe43df"
   end
 
